@@ -1,0 +1,121 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(123, 50, 250);
+}
+
+.calculator {
+    width: 320px;
+    background-color: #240046;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    padding: 0px;
+    margin: 0px;
+    color: #ccc;
+}
+
+
+
+.display {
+    width: 100%;
+    height: 50px;
+    font-size: 2em;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#equals{
+           
+    padding: 20px;         
+    grid-column: span 2;
+    background-color: #c19ee0;
+}
+
+#box{
+    background-color: #c77dff;
+}
+
+#circle{
+    border-radius: 50px;
+    background-color: #b185db;
+}
+
+.button {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.5em;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#circle:hover {
+    background-color: #a27ac9;
+}
+
+#box:hover{
+    background-color: #ae6de0;
+}
+
+button:active {
+    background-color: #ccc;
+}
+
+@media (max-width: 800px) {
+    .calculator {
+        max-width: 100%;  /* Allow the calculator to take up full width on smaller screens */
+        padding: 15px;    /* Reduce padding */
+    }
+
+    .display {
+        font-size: 1.5em; /* Smaller font size on small screens */
+    }
+
+    .button {
+        font-size: 1.2em;  /* Smaller font size for buttons */
+        padding: 15px;     /* Reduce padding for buttons */
+    }
+
+    #equal-btn {
+        font-size: 1.8em;  /* Slightly reduce the font size for the '=' button */
+        padding: 20px;     /* Adjust padding */
+    }
+}
+
+@media (max-width: 500px) {
+    .display {
+        font-size: 1.3em; /* Even smaller font size for very small screens */
+    }
+
+    .button {
+        font-size: 1.1em; /* Reduce button size further */
+        padding: 12px;    /* Smaller padding for tiny screens */
+    }
+
+    #equal-btn {
+        font-size: 1.6em;  /* Adjust '=' button size further */
+        padding: 18px;     /* Adjust padding */
+    }
+}
+
+
